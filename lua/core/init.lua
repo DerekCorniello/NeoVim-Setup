@@ -25,6 +25,7 @@ local plugins =
     "L3MON4D3/LuaSnip",
     "saadparwaiz1/cmp_luasnip",
     "nvim-treesitter/nvim-treesitter",
+    "tpope/vim-fugitive",
     {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.6',
@@ -39,7 +40,7 @@ local plugins =
 
     {
         'nvim-lualine/lualine.nvim',
-        dependencies = { 'nvim-tree/nvim-web-devicons' }
+        dependencies = { 'nvim-tree/nvim-web-devicons', "meuter/lualine-so-fancy.nvim"}
     },
 
 }
