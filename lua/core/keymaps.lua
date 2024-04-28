@@ -74,5 +74,18 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 -- replaces word that you are on
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
--- initializes git
-vim.keymap.set("n", "<leader>gs", vim.cmd.Git);
+-- git keybinds
+vim.keymap.set("n", "<leader>G", vim.cmd.Git);
+vim.keymap.set("n", "<leader>gp", function()
+        vim.cmd.Git({'push'})
+    end, opts)
+vim.keymap.set("n", "<leader>gP", function()
+        vim.cmd.Git({'pull'})
+    end, opts)
+vim.keymap.set("n", "<leader>gac", function()
+        vim.cmd.Git({'add -A'})
+        vim.cmd.Git({'commit'})
+    end, opts)
+vim.keymap.set("n", "<leader>gc", function()
+        vim.cmd.Git({'commit'})
+    end, opts)
