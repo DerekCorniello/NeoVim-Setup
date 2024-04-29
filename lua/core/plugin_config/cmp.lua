@@ -1,5 +1,5 @@
 local cmp = require("cmp")
-local cmp_lsp = require("cmp_nvim_lsp")
+require("cmp_nvim_lsp")
 
 cmp.setup({
     snippet = {
@@ -16,29 +16,23 @@ cmp.setup({
         ['<Tab>'] = cmp.mapping.select_next_item(),
     }),
     sources = {
-        { name = 'path' },                    -- file paths
-        { name = 'nvim_lsp' },                -- from language server
-        { name = 'nvim_lsp_signature_help' }, -- display function signatures with current parameter emphasized
-        { name = 'nvim_lua' },                -- complete neovim's Lua runtime API such vim.lsp.*
-        { name = 'buffer' },                  -- source current buffer
-        { name = 'vsnip' },                   -- nvim-cmp source for vim-vsnip
-        { name = 'calc' },                    -- source for math calculation
+        { name = 'nvim_lsp', max_item_count = 2 },                -- from language server
+        { name = 'nvim_lsp_signature_help', max_item_count = 2 }, -- display function signatures with current parameter emphasized
+        { name = 'buffer', max_item_count = 2 },                  -- source current buffer
+        { name = 'vsnip', max_item_count = 2 },                   -- nvim-cmp source for vim-vsnip
+        { name = 'luasnip', max_item_count = 2}
     },
     window = {
         completion = cmp.config.window.bordered(),
         documentation = cmp.config.window.bordered(),
     },
-    formatting = {
-        fields = { 'menu', 'abbr', 'kind' },
-        format = function(entry, item)
-            local menu_icon = {
-                nvim_lsp = 'λ',
-                vsnip = '⋗',
-                buffer = 'Ω',
-                path = '🖫',
-            }
-            item.menu = menu_icon[entry.source.name]
-            return item
-        end,
+    sorting = {
+        priority_weight = 2,
+        comparators = {
+            cmp.config.compare.offset,
+            cmp.config.compare.score,
+            cmp.config.compare.kind,
+            cmp.config.compare.sort_text,
+        },
     },
 })

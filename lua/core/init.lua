@@ -29,6 +29,18 @@ local plugins =
     "nvim-treesitter/nvim-treesitter",
     "tpope/vim-fugitive",
     "lewis6991/gitsigns.nvim",
+    "mfussenegger/nvim-dap",
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        config = true
+        -- use opts = {} for passing setup options
+        -- this is equalent to setup({}) function
+    },
+    {
+        "olexsmir/gopher.nvim",
+        ft = "go",
+    },
     {
         'mrcjkb/rustaceanvim',
         version = '^4', -- Recommended

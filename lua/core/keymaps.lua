@@ -96,3 +96,8 @@ end)
 vim.keymap.set("n", "<leader>gs", function()
     vim.cmd.Git({ 'status' })
 end)
+
+-- maps for go json tag
+vim.keymap.set("n", "<leader>goj", function ()
+    vim.cmd("GoTagAdd json <CR>")
+end)
