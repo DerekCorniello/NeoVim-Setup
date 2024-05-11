@@ -22,7 +22,7 @@ Some of the plugins used:
 - LSP: [Mason, by williamboman](https://github.com/williamboman/mason.nvim)
 - Completion: [CMP, by hrsh7th](https://github.com/hrsh7th/nvim-cmp)
 - File Browsing: [Harpoon, by thePrimeagen](https://github.com/ThePrimeagen/harpoon/tree/harpoon2) and [telescope](https://github.com/nvim-telescope/telescope.nvim)
-- Git: [Gitsigns, by ]() and [fugitive, by ]()
+- Git: [Gitsigns, by lewis6991](https://github.com/lewis6991/gitsigns.nvim) and [fugitive, by tpope](https://github.com/tpope/vim-fugitive)
 - ...and a whole lot more...
 
 ### 3. Key Mappings
