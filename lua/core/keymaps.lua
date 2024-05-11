@@ -37,9 +37,6 @@ vim.g.mapleader = " "
 -- opens viewer
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
--- packer sync
-vim.keymap.set("n", "<leader>res", vim.cmd.PackerSync)
-
 -- moves selected text with tabbing
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")

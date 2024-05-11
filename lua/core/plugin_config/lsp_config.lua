@@ -8,7 +8,7 @@ require("mason").setup({
     }
 })
 require("mason-lspconfig").setup({
-    ensure_installed = { "lua_ls", "rust_analyzer", "pylsp", "gopls", "tsserver", "denols" }
+    ensure_installed = { "lua_ls", "rust_analyzer", "pylsp", "gopls", "tsserver", "denols", "jsonls" }
 })
 local completion_callback = require('cmp_nvim_lsp').on_attach
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
@@ -52,6 +52,10 @@ require('lspconfig').tsserver.setup{
     on_attach = completion_callback,
 }
 require('lspconfig').denols.setup{
+    capabilities = capabilities,
+    on_attach = completion_callback,
+}
+require('lspconfig').jsonls.setup{
     capabilities = capabilities,
     on_attach = completion_callback,
 }

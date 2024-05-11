@@ -1,0 +1,58 @@
+# Neovim Setup Documentation
+
+## Introduction
+
+This document outlines the configuration and plugins used in my Neovim setup.
+
+## Neovim Configuration
+
+### 1. General Settings
+
+- Relative Line Numbers
+- Tab size of 4 spaces
+- Auto-indent
+- No wrapping
+
+### 2. Plugin Management
+
+Plugins are managed using [lazy.nvim, by folke](https://github.com/folke/lazy.nvim).
+
+Some of the plugins used:
+- Visuals: [OneDark, by navarasu](https://github.com/navarasu/onedark.nvim), [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) and [lualine](https://github.com/nvim-lualine/lualine.nvim)
+- LSP: [Mason, by williamboman](https://github.com/williamboman/mason.nvim)
+- Completion: [CMP, by hrsh7th](https://github.com/hrsh7th/nvim-cmp)
+- File Browsing: [Harpoon, by thePrimeagen](https://github.com/ThePrimeagen/harpoon/tree/harpoon2) and [telescope](https://github.com/nvim-telescope/telescope.nvim)
+- Git: [Gitsigns, by ]() and [fugitive, by ]()
+- ...and a whole lot more...
+
+### 3. Key Mappings
+
+Most are from [thePrimeagens setup](https://github.com/ThePrimeagen/init.lua)
+Some of the keymaps used that are not included in the above setup:
+
+#### Git Keybindings
+- <Leader>G: Executes the Git command.
+- <Leader>gp: Pushes changes to the remote repository.
+- <Leader>gP: Pulls changes from the remote repository.
+- <Leader>gac: Adds all changes to the staging area and commits them.
+- <Leader>gc: Commits changes.
+- <Leader>gs: Displays the current status of the Git repository.
+
+#### Yank to System Register Keybindings
+- <Leader>y: Yanks (copies) the selected text to the system clipboard.
+- <C-c> (in visual mode): Yanks the selected text to the system clipboard.
+- <Leader>yy: Yanks (copies) the current line to the system clipboard.
+
+#### Paste from System Register Keybindings
+- <C-v>: Pastes the contents of the system clipboard.
+- <Leader>p<Leader>: Pastes the contents of the system clipboard.
+- <Leader>P: Pastes the contents of the system clipboard above the current line.
+
+#### Other Keybindings
+- <Leader>pv: Opens the viewer.
+- <leader>f: Formats the file. 
+- K/J (in visual mode): Moves the selected text up/down one line with tabbing.
+
+## Conclusion
+
+This document provides a high-level overview of my Neovim setup. Additional details can be found directly in the configuration files.
