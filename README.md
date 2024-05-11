@@ -31,26 +31,28 @@ Most are from [thePrimeagens setup](https://github.com/ThePrimeagen/init.lua)
 Some of the keymaps used that are not included in the above setup:
 
 #### Git Keybindings
-- <Leader>G: Executes the Git command.
-- <Leader>gp: Pushes changes to the remote repository.
-- <Leader>gP: Pulls changes from the remote repository.
-- <Leader>gac: Adds all changes to the staging area and commits them.
-- <Leader>gc: Commits changes.
-- <Leader>gs: Displays the current status of the Git repository.
+- Leader-G: Executes the Git command.
+- Leader-gp: Pushes changes to the remote repository.
+- Leader-gP: Pulls changes from the remote repository.
+- Leader-gac: Adds all changes to the staging area and commits them.
+- Leader-gc: Commits changes.
+- Leader-gs: Displays the current status of the Git repository.
 
 #### Yank to System Register Keybindings
-- <Leader>y: Yanks (copies) the selected text to the system clipboard.
-- <C-c> (in visual mode): Yanks the selected text to the system clipboard.
-- <Leader>yy: Yanks (copies) the current line to the system clipboard.
+- Leader-y: Yanks (copies) the selected text to the system clipboard.
+- C-c (in visual mode): Yanks the selected text to the system clipboard.
+- Leader-y-y: Yanks (copies) the current line to the system clipboard.
 
 #### Paste from System Register Keybindings
-- <C-v>: Pastes the contents of the system clipboard.
-- <Leader>p<Leader>: Pastes the contents of the system clipboard.
-- <Leader>P: Pastes the contents of the system clipboard above the current line.
+- C-v: Pastes the contents of the system clipboard.
+- Leader-p-Leader: Pastes the contents of the system clipboard.
+- Leader-P: Pastes the contents of the system clipboard above the current line.
 
 #### Other Keybindings
-- <Leader>pv: Opens the viewer.
-- <leader>f: Formats the file. 
+- Leader-p-v: Opens the viewer.
+- Leader-p-f: Does a search on files for keyword.
+- Leader-p-s: Does a grep search on keyword.
+- Leader-f: Formats the file. 
 - K/J (in visual mode): Moves the selected text up/down one line with tabbing.
 
 ## Conclusion
