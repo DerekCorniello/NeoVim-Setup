@@ -26,10 +26,14 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
-vim.opt.completeopt = {'menuone', 'noselect', 'noinsert'}
-vim.opt.shortmess = vim.opt.shortmess + { c = true}
+vim.opt.completeopt = { 'menuone', 'noselect', 'noinsert' }
+vim.opt.shortmess = vim.opt.shortmess + { c = true }
 vim.api.nvim_set_option('updatetime', 300)
 
+vim.o.foldcolumn = '1' -- '0' is not bad
+vim.o.foldlevel = 99   -- Using ufo provider need a large value, feel free to decrease the value
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
 
 -- remaps space to leader
 vim.g.mapleader = " "
@@ -95,6 +99,25 @@ vim.keymap.set("n", "<leader>gs", function()
 end)
 
 -- maps for go json tag
-vim.keymap.set("n", "<leader>goj", function ()
+vim.keymap.set("n", "<leader>goj", function()
     vim.cmd("GoTagAdd json <CR>")
 end)
+
+-- For normal mode
+vim.api.nvim_set_keymap('n', '<leader><tab>', '<c-w>p', {noremap = true})
+
+-- For terminal mode
+vim.api.nvim_set_keymap('t', '<leader><tab>', '<c-\\><c-n><c-w>w', {noremap = true})
+
+-- Move to the left split
+vim.api.nvim_set_keymap('n', '<leader><tab>h', '<c-w>h', {noremap = true})
+
+-- Move to the down split
+vim.api.nvim_set_keymap('n', '<leader><tab>j', '<c-w>j', {noremap = true})
+
+-- Move to the up split
+vim.api.nvim_set_keymap('n', '<leader><tab>k', '<c-w>k', {noremap = true})
+
+-- Move to the right split
+vim.api.nvim_set_keymap('n', '<leader><tab>l', '<c-w>l', {noremap = true})
+

@@ -31,6 +31,10 @@ local plugins =
     "lewis6991/gitsigns.nvim",
     "mfussenegger/nvim-dap",
     {
+        "kevinhwang91/nvim-ufo",
+        dependencies = {'kevinhwang91/promise-async'}
+    },
+    {
         'windwp/nvim-autopairs',
         event = "InsertEnter",
         config = true

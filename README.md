@@ -55,4 +55,4 @@ Some of the keymaps used that are not included in the above setup:
 
 ## Conclusion
 
-This document provides a high-level overview of my Neovim setup. Additional details can be found directly in the configuration files.
+This document provides a high-level overview of my Neovim setup. Additional details can be found directly in the files.

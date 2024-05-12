@@ -1,4 +1,5 @@
 require("core.plugin_config.lualine")
+require("core.plugin_config.ufo")
 require("core.plugin_config.go_config")
 require("core.plugin_config.gitsigns")
 require("core.plugin_config.lsp_config")
