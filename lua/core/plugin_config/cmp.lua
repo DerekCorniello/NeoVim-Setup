@@ -16,11 +16,11 @@ cmp.setup({
         ['<Tab>'] = cmp.mapping.select_next_item(),
     }),
     sources = {
-        { name = 'nvim_lsp', max_item_count = 2 },                -- from language server
-        { name = 'nvim_lsp_signature_help', max_item_count = 2 }, -- display function signatures with current parameter emphasized
-        { name = 'buffer', max_item_count = 2 },                  -- source current buffer
-        { name = 'vsnip', max_item_count = 2 },                   -- nvim-cmp source for vim-vsnip
-        { name = 'luasnip', max_item_count = 2}
+        { name = 'nvim_lsp', max_item_count = 4 },                -- from language server
+        { name = 'nvim_lsp_signature_help', max_item_count = 4 }, -- display function signatures with current parameter emphasized
+        { name = 'buffer', max_item_count = 4 },                  -- source current buffer
+        { name = 'vsnip', max_item_count = 4 },                   -- nvim-cmp source for vim-vsnip
+        { name = 'luasnip', max_item_count = 4}
     },
     window = {
         completion = cmp.config.window.bordered(),

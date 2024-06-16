@@ -30,6 +30,8 @@ local plugins =
     "tpope/vim-fugitive",
     "lewis6991/gitsigns.nvim",
     "mfussenegger/nvim-dap",
+    "windwp/nvim-ts-autotag",
+    "ray-x/web-tools.nvim",
     {
         "kevinhwang91/nvim-ufo",
         dependencies = {'kevinhwang91/promise-async'}

@@ -8,7 +8,7 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
-vim.opt.wrap = false
+vim.opt.wrap = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
@@ -103,21 +103,12 @@ vim.keymap.set("n", "<leader>goj", function()
     vim.cmd("GoTagAdd json <CR>")
 end)
 
--- For normal mode
-vim.api.nvim_set_keymap('n', '<leader><tab>', '<c-w>p', {noremap = true})
+vim.keymap.set('n', '<leader><tab>', '<c-w>p')
+vim.keymap.set('t', '<leader><tab>', '<c-\\><c-n><c-w>w')
 
--- For terminal mode
-vim.api.nvim_set_keymap('t', '<leader><tab>', '<c-\\><c-n><c-w>w', {noremap = true})
-
--- Move to the left split
-vim.api.nvim_set_keymap('n', '<leader><tab>h', '<c-w>h', {noremap = true})
-
--- Move to the down split
-vim.api.nvim_set_keymap('n', '<leader><tab>j', '<c-w>j', {noremap = true})
-
--- Move to the up split
-vim.api.nvim_set_keymap('n', '<leader><tab>k', '<c-w>k', {noremap = true})
-
--- Move to the right split
-vim.api.nvim_set_keymap('n', '<leader><tab>l', '<c-w>l', {noremap = true})
+-- Move across tabs
+vim.keymap.set('n', '<leader><tab>h', '<c-w>h')
+vim.keymap.set('n', '<leader><tab>j', '<c-w>j')
+vim.keymap.set('n', '<leader><tab>k', '<c-w>k')
+vim.keymap.set('n', '<leader><tab>l', '<c-w>l')
 
