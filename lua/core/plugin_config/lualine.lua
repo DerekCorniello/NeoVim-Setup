@@ -13,14 +13,14 @@ local config = {
     sections = {
         lualine_a = {
             { "fancy_mode", width = 7
-        }
+            }
         },
         lualine_b = {
             { "fancy_branch" },
             { "fancy_diff" },
         },
         lualine_c = {
-            { "filename" }
+            { "filename", path = 1 }
         },
         lualine_x = {
             { "fancy_macro" },
@@ -37,5 +37,4 @@ local config = {
     }
 }
 
--- Now don't forget to initialize lualine
 lualine.setup(config)
