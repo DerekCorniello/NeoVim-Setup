@@ -130,3 +130,5 @@ end
 
 -- Create a keybinding to trigger the function
 vim.api.nvim_set_keymap('n', 'go', ':lua FindOccurence()<CR> | n', { noremap = true, silent = true })
+
+vim.keymap.set({"n", "v"}, "<leader>ew", ':lua vim.diagnostic.open_float()<CR>')
