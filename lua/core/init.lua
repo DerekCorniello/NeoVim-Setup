@@ -9,7 +9,18 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
         lazypath,
     })
 end
+
 vim.opt.rtp:prepend(lazypath)
+
+vim.diagnostic.config({
+    severity_sort = true,
+    float = {
+        source = "always",
+    },
+    virtual_text = {
+        prefix = '●',
+    },
+})
 
 local plugins =
 {
@@ -34,7 +45,7 @@ local plugins =
     "ray-x/web-tools.nvim",
     {
         "kevinhwang91/nvim-ufo",
-        dependencies = {'kevinhwang91/promise-async'}
+        dependencies = { 'kevinhwang91/promise-async' }
     },
     {
         'windwp/nvim-autopairs',

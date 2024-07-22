@@ -21,7 +21,20 @@ require 'lspconfig'.lua_ls.setup {
                 globals = { 'vim' }
             }
         }
-    }
+    },
+    handlers = {
+        ["textDocument/publishDiagnostics"] = function(_, result, ctx, config)
+            config = config or {}
+            config.virtual_text = config.virtual_text or {
+                severity = {
+                    min = vim.diagnostic.severity.ERROR,
+                    max = vim.diagnostic.severity.HINT,
+                },
+                severity_sort = true,
+            }
+            vim.lsp.diagnostic.on_publish_diagnostics(_, result, ctx, config)
+        end,
+    },
 }
 require('lspconfig').pylsp.setup {
     capabilities = capabilities,
