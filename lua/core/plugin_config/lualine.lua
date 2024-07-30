@@ -1,8 +1,11 @@
 local lualine = require('lualine')
+local customtheme = require'lualine.themes.ayu_dark'
+customtheme.normal.b.bg = '#0c0c0c'
+customtheme.normal.c.bg = '#0c0c0c'
 
 local config = {
     options = {
-        theme = "auto",
+        theme = customtheme,
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
         globalstatus = true,
