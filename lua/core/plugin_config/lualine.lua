@@ -2,7 +2,7 @@ local lualine = require('lualine')
 
 local config = {
     options = {
-        theme = "seoul256",
+        theme = "auto",
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
         globalstatus = true,

@@ -1,4 +1,11 @@
 require('onedark').setup {
-    style = 'darker'
+    style = 'deep',
+    transparent = true,
+    lualine = {
+        transparent = true,
+    },
+    colors = {
+
+    },
 }
 require('onedark').load()
