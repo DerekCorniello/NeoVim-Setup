@@ -28,6 +28,7 @@ local config = {
             { "filename", path = 1 }
         },
         lualine_x = {
+            { "fancy_diagnostics" },
             { "fancy_diff" },
             { "fancy_lsp_servers" }
         },
@@ -35,7 +36,6 @@ local config = {
             { "fancy_filetype", ts_icon = "" }
         },
         lualine_z = {
-            { "fancy_diagnostics" },
             { "fancy_searchcount" },
             { "fancy_location" },
         },
