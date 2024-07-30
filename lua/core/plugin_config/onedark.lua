@@ -4,8 +4,8 @@ require('onedark').setup {
     lualine = {
         transparent = true,
     },
-    colors = {
-
-    },
+    diagnostics = {
+        background = false,
+    }
 }
 require('onedark').load()

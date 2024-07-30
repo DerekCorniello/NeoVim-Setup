@@ -1,7 +1,9 @@
 local lualine = require('lualine')
-local customtheme = require'lualine.themes.ayu_dark'
+local customtheme = require 'lualine.themes.ayu_dark'
 customtheme.normal.b.bg = '#0c0c0c'
 customtheme.normal.c.bg = '#0c0c0c'
+customtheme.normal.b.fg = '#94A1BE'
+customtheme.normal.c.fg = '#94A1BE'
 
 local config = {
     options = {
@@ -20,22 +22,22 @@ local config = {
         },
         lualine_b = {
             { "fancy_branch" },
-            { "fancy_diff" },
+            { "fancy_macro" },
         },
         lualine_c = {
             { "filename", path = 1 }
         },
         lualine_x = {
-            { "fancy_macro" },
-            { "fancy_diagnostics" },
-            { "fancy_searchcount" },
-            { "fancy_location" },
+            { "fancy_diff" },
+            { "fancy_lsp_servers" }
         },
         lualine_y = {
             { "fancy_filetype", ts_icon = "" }
         },
         lualine_z = {
-            { "fancy_lsp_servers" }
+            { "fancy_diagnostics" },
+            { "fancy_searchcount" },
+            { "fancy_location" },
         },
     }
 }
