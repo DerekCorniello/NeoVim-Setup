@@ -2,6 +2,8 @@ local lualine = require('lualine')
 local customtheme = require'lualine.themes.ayu_dark'
 customtheme.normal.b.bg = '#0c0c0c'
 customtheme.normal.c.bg = '#0c0c0c'
+customtheme.normal.b.fg = '#ffffff'
+customtheme.normal.c.fg = '#ffffff'
 
 local config = {
     options = {
