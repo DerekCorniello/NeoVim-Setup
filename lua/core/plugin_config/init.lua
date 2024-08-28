@@ -1,3 +1,4 @@
+require("core.plugin_config.noice")
 require("core.plugin_config.lualine")
 require("core.plugin_config.web_tools")
 require("core.plugin_config.ufo")

@@ -12,6 +12,7 @@ require("mason-lspconfig").setup({
 })
 local completion_callback = require('cmp_nvim_lsp').on_attach
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
 require 'lspconfig'.lua_ls.setup {
     capabilities = capabilities,
     on_attach = completion_callback,
