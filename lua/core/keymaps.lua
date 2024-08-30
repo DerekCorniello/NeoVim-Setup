@@ -21,7 +21,6 @@ vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
 
-vim.opt.scrolloff = 15
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
@@ -113,23 +112,7 @@ vim.keymap.set('n', '<leader><tab>j', '<c-w>j')
 vim.keymap.set('n', '<leader><tab>k', '<c-w>k')
 vim.keymap.set('n', '<leader><tab>l', '<c-w>l')
 
--- go to def or dec, and open in side pane.
-vim.keymap.set("n", "gD", ":sp | :resize 12 | lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "gd", ":sp | :resize 12 | lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
-
--- search for word under cursor.
-function FindOccurence()
-    -- Get the word under the cursor
-    local word = vim.fn.expand('<cword>')
-    -- Open a new pane
-    vim.cmd('sp')
-    vim.cmd('wincmd w')
-    vim.cmd('resize 12')
-    -- Send the search command to the new pane
-    vim.cmd('/' .. word)
-end
-
--- Create a keybinding to trigger the function
-vim.api.nvim_set_keymap('n', 'go', ':lua FindOccurence()<CR> | n', { noremap = true, silent = true })
-
 vim.keymap.set({"n", "v"}, "<leader>ew", ':lua vim.diagnostic.open_float()<CR>')
+vim.keymap.set({"n", "v"}, "<leader>def", "<cmd>lua require('goto-preview').goto_preview_definition()<CR>")
+vim.keymap.set({"n", "v"}, "<leader>dec", "<cmd>lua require('goto-preview').goto_preview_declaration()<CR>")
+vim.keymap.set({"n", "v"}, "<leader>ref", "<cmd>lua require('goto-preview').goto_preview_references()<CR>")
