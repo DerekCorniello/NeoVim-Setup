@@ -70,12 +70,6 @@ vim.keymap.set({ "n", "v" }, "<leader>P", [["+P]])
 -- format whole package
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
--- quick-fix nav
-vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
-vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
-vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
-vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
-
 -- replaces word that you are on
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 

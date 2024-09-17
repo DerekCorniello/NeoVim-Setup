@@ -18,7 +18,7 @@ vim.diagnostic.config({
         source = "always",
     },
     virtual_text = {
-        prefix = '●',
+        prefix = '●', -- Could be '●', '▎', 'x'
     },
 })
 
@@ -51,8 +51,6 @@ local plugins =
         'windwp/nvim-autopairs',
         event = "InsertEnter",
         config = true
-        -- use opts = {} for passing setup options
-        -- this is equalent to setup({}) function
     },
     {
         "olexsmir/gopher.nvim",
@@ -60,8 +58,8 @@ local plugins =
     },
     {
         'mrcjkb/rustaceanvim',
-        version = '^4', -- Recommended
-        lazy = false,   -- This plugin is already lazy
+        version = '^4',
+        lazy = false,
     },
     {
         'nvim-telescope/telescope.nvim',
@@ -78,6 +76,14 @@ local plugins =
     {
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons', "meuter/lualine-so-fancy.nvim" }
+    },
+    {
+        "jiaoshijie/undotree",
+        dependencies = "nvim-lua/plenary.nvim",
+        config = true,
+        keys = { -- load the plugin only when using it's keybinding:
+            { "<leader>u", "<cmd>lua require('undotree').toggle()<cr>" },
+        },
     }
 }
 require("lazy").setup(plugins)

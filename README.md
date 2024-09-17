@@ -23,6 +23,8 @@ Some of the plugins used:
 - Completion: [CMP, by hrsh7th](https://github.com/hrsh7th/nvim-cmp)
 - File Browsing: [Harpoon, by thePrimeagen](https://github.com/ThePrimeagen/harpoon/tree/harpoon2) and [telescope](https://github.com/nvim-telescope/telescope.nvim)
 - Git: [Gitsigns, by lewis6991](https://github.com/lewis6991/gitsigns.nvim) and [fugitive, by tpope](https://github.com/tpope/vim-fugitive)
+- [UndoTree](https://github.com/mbbill/undotree): Keeps track of your undo history in tree form.
+- [Lualine](https://github.com/nvim-lualine/lualine.nvim): Stylized bar at the bottom of the cmdline.
 - ...and a whole lot more...
 
 ### 3. Key Mappings
@@ -38,12 +40,10 @@ Some of the keymaps used that are not included in the above setup:
 - Leader-gc: Commits changes.
 - Leader-gs: Displays the current status of the Git repository.
 
-#### Yank to System Register Keybindings
+#### Yank/Pase to System Register Keybindings
 - Leader-y: Yanks (copies) the selected text to the system clipboard.
 - C-c (in visual mode): Yanks the selected text to the system clipboard.
 - Leader-y-y: Yanks (copies) the current line to the system clipboard.
-
-#### Paste from System Register Keybindings
 - C-v: Pastes the contents of the system clipboard.
 - Leader-p-Leader: Pastes the contents of the system clipboard.
 - Leader-P: Pastes the contents of the system clipboard above the current line.
@@ -55,6 +55,6 @@ Some of the keymaps used that are not included in the above setup:
 - Leader-f: Formats the file. 
 - K/J (in visual mode): Moves the selected text up/down one line with tabbing.
 
-## Conclusion
-
-This document provides a high-level overview of my Neovim setup. Additional details can be found directly in the files.
+#### Movement Keybindings
+- Leader-<tab>-HJKL: Moves current buffer in focuse using vim motions
+- 

@@ -63,6 +63,7 @@ require('lspconfig').gopls.setup {
 require('lspconfig').tsserver.setup {
     capabilities = capabilities,
     on_attach = completion_callback,
+    filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact", "vue" }
 }
 
 require('lspconfig').jsonls.setup {
