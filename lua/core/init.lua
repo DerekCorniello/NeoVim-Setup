@@ -84,6 +84,11 @@ local plugins =
         keys = { -- load the plugin only when using it's keybinding:
             { "<leader>u", "<cmd>lua require('undotree').toggle()<cr>" },
         },
+        {
+          "rmagatti/goto-preview",
+          event = "BufEnter",
+          config = true, -- necessary as per https://github.com/rmagatti/goto-preview/issues/88
+        }
     }
 }
 require("lazy").setup(plugins)
