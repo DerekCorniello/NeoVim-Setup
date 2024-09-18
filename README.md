@@ -4,6 +4,8 @@
 
 This document outlines the configuration and plugins used in my Neovim setup.
 
+Updated as of NeoVim 10.1
+
 ## Neovim Configuration
 
 ### 1. General Settings
@@ -42,9 +44,7 @@ Some of the keymaps used that are not included in the above setup:
 
 #### Yank/Pase to System Register Keybindings
 - Leader-y: Yanks (copies) the selected text to the system clipboard.
-- C-c (in visual mode): Yanks the selected text to the system clipboard.
 - Leader-y-y: Yanks (copies) the current line to the system clipboard.
-- C-v: Pastes the contents of the system clipboard.
 - Leader-p-Leader: Pastes the contents of the system clipboard.
 - Leader-P: Pastes the contents of the system clipboard above the current line.
 
@@ -56,5 +56,7 @@ Some of the keymaps used that are not included in the above setup:
 - K/J (in visual mode): Moves the selected text up/down one line with tabbing.
 
 #### Movement Keybindings
-- Leader-<tab>-HJKL: Moves current buffer in focuse using vim motions
-- 
+- Leader-<tab>-hjkl: Moves current buffer in focuse using vim motions
+- C-hjkl: moves around top 4 files in Harpoon 
+- C-zx: moves left and right around the Harpoon files
+- C-xv: in Telescope, opens up the selected file in a sp/vsp

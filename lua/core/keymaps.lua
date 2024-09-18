@@ -62,8 +62,6 @@ vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("v", "<C-c>", [["+y]])
 vim.keymap.set("n", "<leader>yy", [["+Y]])
 
--- paste from system register
-vim.keymap.set({ "n", "v" }, "<C-v>", [["+p]])
 vim.keymap.set({ "n", "v" }, "<leader>p<leader>", [["+p]])
 vim.keymap.set({ "n", "v" }, "<leader>P", [["+P]])
 
