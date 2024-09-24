@@ -113,3 +113,6 @@ vim.keymap.set({"n", "v"}, "<leader>ref", function()
     vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Esc>", true, false, true), "n", true)
   end)
 end)
+
+vim.keymap.set('n', '<C-M>', '<C-w>L')
+vim.keymap.set('n', '<C-N>', '<C-w>K')

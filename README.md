@@ -56,7 +56,7 @@ Some of the keymaps used that are not included in the above setup:
 - K/J (in visual mode): Moves the selected text up/down one line with tabbing.
 
 #### Movement Keybindings
-- Leader-<tab>-hjkl: Moves current buffer in focuse using vim motions
+- Leader-<tab>-hjkl: Moves current buffer in focus using vim motions
 - C-hjkl: moves around top 4 files in Harpoon 
 - C-zx: moves left and right around the Harpoon files
 - C-xv: in Telescope, opens up the selected file in a sp/vsp
