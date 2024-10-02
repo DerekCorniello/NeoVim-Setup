@@ -8,7 +8,7 @@ cmp.setup({
         end,
     },
     mapping = cmp.mapping.preset.insert({
-        ['<C-m>'] = cmp.mapping.select_prev_item(),
+        ['<C-S-n>'] = cmp.mapping.select_prev_item(),
         ['<C-n>'] = cmp.mapping.select_next_item(),
         ['<CR>'] = cmp.mapping.confirm({ select = true }),
         ["<C-b>"] = cmp.mapping.complete(),
