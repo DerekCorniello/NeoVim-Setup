@@ -19,3 +19,5 @@ undotree.setup({
     ['q'] = "quit",
   },
 })
+
+vim.keymap.set('n', '<leader>u', undotree.toggle, { noremap = true, silent = true })
