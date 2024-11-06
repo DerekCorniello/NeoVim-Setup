@@ -8,7 +8,7 @@ require("mason").setup({
     }
 })
 require("mason-lspconfig").setup({
-    ensure_installed = { "lua_ls", "rust_analyzer", "pylsp", "gopls", "tsserver", "denols", "jsonls" }
+    ensure_installed = { "lua_ls", "pylsp", "ts_ls", "denols", "jsonls" }
 })
 local completion_callback = require('cmp_nvim_lsp').on_attach
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
@@ -61,7 +61,7 @@ require('lspconfig').gopls.setup {
     }
 }
 
-require('lspconfig').tsserver.setup {
+require('lspconfig').ts_ls.setup {
     capabilities = capabilities,
     on_attach = completion_callback,
     filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact", "vue" }
