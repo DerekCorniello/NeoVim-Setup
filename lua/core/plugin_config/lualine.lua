@@ -26,7 +26,7 @@ local config = {
         lualine_c = {
             {
                 "filename",
-                path = 4,
+                path = 3,
                 file_status = true,
                 symbols = {
                     modified = '[Not Saved]',
