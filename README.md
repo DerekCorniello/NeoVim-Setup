@@ -1,3 +1,6 @@
+![Neovim](https://img.shields.io/badge/Neovim-%233d3d3d.svg?style=for-the-badge&logo=neovim&logoColor=%230f87ff)
+![Last Commit](https://img.shields.io/github/last-commit/yourusername/dotfiles?style=for-the-badge)
+
 # Neovim Setup Documentation
 
 ## Introduction
@@ -60,3 +63,8 @@ Some of the keymaps used that are not included in the above setup:
 - C-hjkl: moves around top 4 files in Harpoon 
 - C-zx: moves left and right around the Harpoon files
 - C-xv: in Telescope, opens up the selected file in a sp/vsp
+
+## Connect with Me!
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/derek-corniello)
+[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/derekcorniello)
+[![X](https://img.shields.io/badge/X-%231DA1F2.svg?style=for-the-badge&logo=x&logoColor=white)](https://x.com/derekcorniello)
