@@ -1,4 +1,4 @@
-![Neovim](https://img.shields.io/badge/Neovim-%233d3d3d.svg?style=for-the-badge&logo=neovim&logoColor=%230f87ff)
+![Neovim](https://img.shields.io/badge/neovim-%2357A143.svg?style=for-the-badge&logo=neovim&logoColor=white)
 ![Last Commit](https://img.shields.io/github/last-commit/DerekCorniello/NeoVim-Setup?style=for-the-badge)
 
 # Neovim Setup Documentation
