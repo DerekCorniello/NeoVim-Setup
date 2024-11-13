@@ -1,5 +1,5 @@
 ![Neovim](https://img.shields.io/badge/Neovim-%233d3d3d.svg?style=for-the-badge&logo=neovim&logoColor=%230f87ff)
-![Last Commit](https://img.shields.io/github/last-commit/yourusername/dotfiles?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/DerekCorniello/NeoVim-Setup?style=for-the-badge)
 
 # Neovim Setup Documentation
 
@@ -16,7 +16,7 @@ Updated as of NeoVim 10.1
 - Relative Line Numbers
 - Tab size of 4 spaces
 - Auto-indent
-- No wrapping
+- Folding
 
 ### 2. Plugin Management
 
@@ -57,6 +57,7 @@ Some of the keymaps used that are not included in the above setup:
 - Leader-p-s: Does a grep search on keyword.
 - Leader-f: Formats the file. 
 - K/J (in visual mode): Moves the selected text up/down one line with tabbing.
+- Leader-u: Toggles UndoTree
 
 #### Movement Keybindings
 - Leader-<tab>-hjkl: Moves current buffer in focus using vim motions
