@@ -114,5 +114,7 @@ vim.keymap.set({"n", "v"}, "<leader>ref", function()
   end)
 end)
 
+vim.keymap.set('n', '<CR>', '<CR>') -- Unmaps Enter in normal mode
+
 vim.keymap.set('n', '<C-M>', '<C-w>L')
 vim.keymap.set('n', '<C-N>', '<C-w>K')
