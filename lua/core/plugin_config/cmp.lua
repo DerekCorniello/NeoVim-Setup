@@ -12,12 +12,12 @@ cmp.setup({
         ['<C-A-n>'] = cmp.mapping.select_prev_item(),
         ['<Tab>'] = cmp.mapping.select_next_item(),
         ['<S-Tab>'] = cmp.mapping.select_prev_item(),
-        ['<C-CR>'] = cmp.mapping.confirm({ select = true }),
+        ['<C-k>'] = cmp.mapping.confirm({ select = true }),
     }),
     sources = {
         { name = 'nvim_lsp', max_item_count = 8 },                -- from language server
-        { name = 'nvim_lsp_signature_help', max_item_count = 4 }, -- display function signatures with current parameter emphasized
-        { name = 'buffer', max_item_count = 2 },                  -- source current buffer
+        { name = 'nvim_lsp_signature_help', max_item_count = 8 }, -- display function signatures with current parameter emphasized
+        { name = 'buffer', max_item_count = 8 },                  -- source current buffer
         { name = 'vsnip', max_item_count = 1 },                   -- nvim-cmp source for vim-vsnip
         { name = 'luasnip', max_item_count = 1}
     },
