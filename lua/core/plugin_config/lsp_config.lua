@@ -72,6 +72,17 @@ require('lspconfig').jsonls.setup {
     on_attach = completion_callback,
 }
 
+require('lspconfig').sqls.setup {
+    capabilities = capabilities,
+    on_attach = completion_callback,
+    filetypes = {
+        "sql",
+        "sqlite",
+        "sqlite3",
+        "db",
+    }
+}
+
 local configs = require 'lspconfig.configs'
 
 capabilities.textDocument.completion.completionItem.snippetSupport = true
