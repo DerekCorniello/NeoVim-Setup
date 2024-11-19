@@ -75,12 +75,7 @@ require('lspconfig').jsonls.setup {
 require('lspconfig').sqls.setup {
     capabilities = capabilities,
     on_attach = completion_callback,
-    filetypes = {
-        "sql",
-        "sqlite",
-        "sqlite3",
-        "db",
-    }
+    lowercaseKeywords = false
 }
 
 local configs = require 'lspconfig.configs'
