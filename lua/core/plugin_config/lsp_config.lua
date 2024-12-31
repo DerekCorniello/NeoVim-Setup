@@ -121,11 +121,6 @@ require('lspconfig').html.setup {
     on_attach = completion_callback,
 }
 
-require('lspconfig').rust_analyzer.setup {
-    capabilities = capabilities,
-    on_attach = completion_callback,
-}
-
 require('lspconfig').clangd.setup {
     capabilities = capabilities,
     on_attach = completion_callback,
